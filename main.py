@@ -29,4 +29,14 @@ While True:
             continue
 
         break
+
+while True:
+    print('Enter the powerball number from 1 to 26.')
+    response('> ')
+
+    try:
+        powerball = int(response)
+    except ValueError:
+        print('please enter a number, like 3, 15, or 22.')
+        continue
         
