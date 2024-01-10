@@ -7,4 +7,6 @@ While True:
     print('each number. (for example: 5 17 23 42 50)')
     response = input('> ')
 
-    
+    numbers = response.split()
+    if len(numbers) != 5:
+        print('Please enter 5 numbers, seperated by spaces')
