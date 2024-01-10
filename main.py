@@ -24,3 +24,9 @@ While True:
                 print('the number must be between 1 and 89')
                 continue
         
+        if len(set(numbers)) != 5:
+            print('You must enter 5 different numbers')
+            continue
+
+        break
+        
