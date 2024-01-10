@@ -2,7 +2,7 @@ import random
 
 print('Powerbal Lottery by inventwithpython')
 
-While True:
+while True:
     print('Enter 4 different numbers from 1 to 89, with space between')
     print('each number. (for example: 5 17 23 42 50)')
     response = input('> ')
@@ -15,24 +15,25 @@ While True:
     try:
         for i in range(5):
             numbers[i] = int(numbers[i])
-        except ValueError:
+        
+    except ValueError:
             print('please enter number , like 27, 35, or 65.')
             continue
         
-        for i in range(5):
-            if not (1 <= number[i] <= 89):
+    for i in range(5):
+            if not (1 <= numbers[i] <= 89):
                 print('the number must be between 1 and 89')
                 continue
         
-        if len(set(numbers)) != 5:
+    if len(set(numbers)) != 5:
             print('You must enter 5 different numbers')
             continue
 
-        break
+    break
 
 while True:
     print('Enter the powerball number from 1 to 26.')
-    response('> ')
+    response = ('> ')
 
     try:
         powerball = int(response)
@@ -45,4 +46,16 @@ while True:
         continue
 
     break 
+
+while True:
+    print('How many times do you want to play?')
+    response = input('>')
+
+    try:
+        numPlays = int(response)
+    except ValueError:
+        print('please enter a numberm like 3 or 15')
+        continue
+
+
 
