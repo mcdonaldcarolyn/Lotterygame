@@ -10,3 +10,9 @@ While True:
     numbers = response.split()
     if len(numbers) != 5:
         print('Please enter 5 numbers, seperated by spaces')
+        continue
+
+    try:
+        for i in range(5):
+            numbers[i] = int(numbers[i])
+        except ValueError
