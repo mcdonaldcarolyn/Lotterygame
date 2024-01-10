@@ -54,8 +54,26 @@ while True:
     try:
         numPlays = int(response)
     except ValueError:
-        print('please enter a numberm like 3 or 15')
+       print('please enter a number, like 3, 15, or 2000.')
+       continue
+
+    if not (1 <= numPlays <= 10000):
+        print('you can play between 10000 times.')
         continue
 
+    break 
+
+price = '$' + str(2 * numPlays):
+print('It costs', price, 'to play', numPlays, 'times, but don\'t)
+print('worry. I am sure you will win it back.')
+input('press enter to start...')
+
+possibleNumbers = list(range(1, 90))
+    for i in range(numPlays):
+        random.shuffle(possibleNumbers)
+        winningNumbers = possibleNumbers[0:5]
+        winningPowerball = random.randint(1, 26)
+
+        
 
 
