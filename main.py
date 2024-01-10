@@ -15,4 +15,12 @@ While True:
     try:
         for i in range(5):
             numbers[i] = int(numbers[i])
-        except ValueError
+        except ValueError:
+            print('please enter number , like 27, 35, or 65.')
+            continue
+        
+        for i in range(5):
+            if not (1 <= number[i] <= 89):
+                print('the number must be between 1 and 89')
+                continue
+        
