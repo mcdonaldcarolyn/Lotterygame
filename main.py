@@ -39,4 +39,10 @@ while True:
     except ValueError:
         print('please enter a number, like 3, 15, or 22.')
         continue
-        
+
+    if not(1 <= powerball <= 26):
+        print('the powerball number must be between 1 and 26')
+        continue
+
+    break 
+
