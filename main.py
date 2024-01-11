@@ -33,7 +33,7 @@ while True:
 
 while True:
     print('Enter the powerball number from 1 to 26.')
-    response = ('> ')
+    response = input('> ')
 
     try:
         powerball = int(response)
@@ -78,7 +78,7 @@ for i in range(numPlays):
     allWinningNums = ''
     for i in range(5):
         allWinningNums += str(winningNumbers[i]) + ' '
-    allWinningNums += 'and ' str(winningPowerball)
+    allWinningNums += 'and ' + str(winningPowerball)
     print(allWinningNums.ljust(21), end=' ')
 
     if (set(numbers) == set(winningNumbers)
@@ -88,6 +88,9 @@ for i in range(numPlays):
         print('YOU would be a billionaire if this was real.')
         break 
 
-    
+    else:
+        print('you lost.')
+print('you have wasted', price)
+print('thanks for playing')
 
 
