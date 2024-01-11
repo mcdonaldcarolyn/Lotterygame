@@ -63,23 +63,30 @@ while True:
 
     break 
 
-price = '$' + str(2 * numPlays):
-print('It costs', price, 'to play', numPlays, 'times, but don\'t)
+price = '$' + str(2 * numPlays)
+print('It costs', price, 'to play', numPlays, 'times, but don\'t')
 print('worry. I am sure you will win it back.')
 input('press enter to start...')
 
 possibleNumbers = list(range(1, 90))
 for i in range(numPlays):
-        random.shuffle(possibleNumbers)
-        winningNumbers = possibleNumbers[0:5]
-        winningPowerball = random.randint(1, 26)
+    random.shuffle(possibleNumbers)
+    winningNumbers = possibleNumbers[0:5]
+    winningPowerball = random.randint(1, 26)
     
     print('The winning number are:', end='')
     allWinningNums = ''
-    for i in range(5)
+    for i in range(5):
         allWinningNums += str(winningNumbers[i]) + ' '
     allWinningNums += 'and ' str(winningPowerball)
     print(allWinningNums.ljust(21), end=' ')
+
+    if (set(numbers) == set(winningNumbers)
+        and powerball == winningPowerball):
+        print()
+        print('YOu won Powerball lottery, Congratulations') 
+        print('YOU would be a billionaire if this was real.')
+        break 
 
     
 
